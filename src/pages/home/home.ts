@@ -13,7 +13,7 @@ export class HomePage {
 creds: CredenciaisDTO = {
   email: "",
   senha: ""
-}
+};
 
   constructor(public navCtrl: NavController, public menu: MenuController) {
 
@@ -24,6 +24,7 @@ creds: CredenciaisDTO = {
   }
 
   ionViewDidLeave() {
+    //console.log(this.creds);
     this.menu.swipeEnable(true);
   }
 
